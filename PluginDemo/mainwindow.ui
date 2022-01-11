@@ -1,0 +1,2377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1176</width>
+    <height>703</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>12</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <widget class="QComboBox" name="comboBox">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>87</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>11111111111112233333333</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>22</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="OCombobox" name="oCombobox">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>30</y>
+          <width>87</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>12222222222222222222222222222</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>22</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="OMoveWidget" name="oMoveWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>80</y>
+          <width>121</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>123</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+       <widget class="OScanTanTan" name="oScanTanTan">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>30</y>
+          <width>341</width>
+          <height>351</height>
+         </rect>
+        </property>
+        <property name="image">
+         <pixmap resource="res.qrc">:/Desktop/back.png</pixmap>
+        </property>
+        <property name="imageBorderWidth">
+         <number>2</number>
+        </property>
+        <property name="imageBorderColor">
+         <color>
+          <red>255</red>
+          <green>85</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="scanRadius">
+         <number>150</number>
+        </property>
+        <property name="scanWidth">
+         <number>5</number>
+        </property>
+        <property name="ringWidth">
+         <number>3</number>
+        </property>
+        <property name="scanStep">
+         <number>3</number>
+        </property>
+        <property name="ringStep">
+         <number>6</number>
+        </property>
+        <property name="scanColor">
+         <color>
+          <red>85</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="ringColor">
+         <color>
+          <red>85</red>
+          <green>85</green>
+          <blue>255</blue>
+         </color>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>页</string>
+       </attribute>
+       <widget class="OAudioWaveWidget" name="oAudioWaveWidget">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>280</y>
+          <width>811</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="deep">
+         <double>40.000000000000000</double>
+        </property>
+        <property name="lineColor">
+         <color>
+          <red>0</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>0</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>187</red>
+          <green>200</green>
+          <blue>196</blue>
+         </color>
+        </property>
+        <property name="waveStyle">
+         <enum>OAudioWaveWidget::WaveStyle_Bar</enum>
+        </property>
+       </widget>
+       <widget class="OWaveBar" name="oWaveBar">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>30</y>
+          <width>71</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <property name="minValue">
+         <number>0</number>
+        </property>
+        <property name="maxValue">
+         <number>221</number>
+        </property>
+        <property name="value">
+         <number>30</number>
+        </property>
+        <property name="step">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="space">
+         <number>1</number>
+        </property>
+        <property name="headHeight">
+         <number>2</number>
+        </property>
+        <property name="bgColorStart">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="bgColorEnd">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="barColor">
+         <color>
+          <red>170</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>开始</string>
+        </property>
+       </widget>
+       <widget class="OWaveBar" name="oWaveBar_2">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>30</y>
+          <width>71</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <property name="minValue">
+         <number>0</number>
+        </property>
+        <property name="maxValue">
+         <number>500</number>
+        </property>
+        <property name="value">
+         <number>30</number>
+        </property>
+        <property name="step">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="space">
+         <number>1</number>
+        </property>
+        <property name="headHeight">
+         <number>2</number>
+        </property>
+        <property name="bgColorStart">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="bgColorEnd">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="barColor">
+         <color>
+          <red>170</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="OWaveDouble" name="oWaveDouble">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>40</y>
+          <width>51</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="value">
+         <number>10</number>
+        </property>
+        <property name="step">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="bgColorStart">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="bgColorEnd">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="barColor">
+         <color>
+          <red>85</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>90</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>增长</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>150</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>递减</string>
+        </property>
+       </widget>
+       <widget class="OWaveLine" name="oWaveLine">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>430</y>
+          <width>801</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="maxValue">
+         <number>110</number>
+        </property>
+        <property name="step">
+         <number>2</number>
+        </property>
+        <property name="space">
+         <number>2</number>
+        </property>
+        <property name="bgColorStart">
+         <color>
+          <red>195</red>
+          <green>200</green>
+          <blue>188</blue>
+         </color>
+        </property>
+        <property name="bgColorEnd">
+         <color>
+          <red>193</red>
+          <green>200</green>
+          <blue>195</blue>
+         </color>
+        </property>
+        <property name="lineColor">
+         <color>
+          <red>85</red>
+          <green>85</green>
+          <blue>255</blue>
+         </color>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>页</string>
+       </attribute>
+       <widget class="OWavePlot" name="oWavePlot">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>150</y>
+          <width>881</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="interval">
+         <number>250</number>
+        </property>
+        <property name="waterHeight">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="waterDensity">
+         <double>10.000000000000000</double>
+        </property>
+        <property name="lineColor">
+         <color>
+          <red>170</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="bgColor">
+         <color>
+          <red>255</red>
+          <green>191</green>
+          <blue>171</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>开始</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>100</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>结束</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>410</y>
+          <width>701</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="pageStep">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider_2">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>460</y>
+          <width>701</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+        <property name="pageStep">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider_3">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>510</y>
+          <width>701</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>20</number>
+        </property>
+        <property name="pageStep">
+         <number>1</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>410</y>
+          <width>72</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>速度</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>460</y>
+          <width>72</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>高度</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>510</y>
+          <width>72</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>密度</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>页</string>
+       </attribute>
+       <widget class="OTimeAxisWidget" name="oTimeAxisWidget">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>30</y>
+          <width>521</width>
+          <height>481</height>
+         </rect>
+        </property>
+        <property name="itemMargin">
+         <number>10</number>
+        </property>
+        <property name="itemHeight">
+         <number>60</number>
+        </property>
+        <property name="infoPadding">
+         <number>6</number>
+        </property>
+        <property name="infoHeight">
+         <number>28</number>
+        </property>
+        <property name="baseColor">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="lineColor">
+         <color>
+          <red>85</red>
+          <green>0</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="title">
+         <string>titlex</string>
+        </property>
+        <property name="infos">
+         <string>2021,hello</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+       <widget class="OGaugeClock" name="oGaugeClock">
+        <property name="geometry">
+         <rect>
+          <x>790</x>
+          <y>110</y>
+          <width>261</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <property name="crownColorStart">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="crownColorEnd">
+         <color>
+          <red>170</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="foreground">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="background">
+         <color>
+          <red>255</red>
+          <green>170</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="pointerHourColor">
+         <color>
+          <red>170</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="pointerMinColor">
+         <color>
+          <red>85</red>
+          <green>85</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="pointerSecColor">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>127</blue>
+         </color>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>页</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>20</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+       <widget class="OGaugeCloud" name="oGaugeCloud">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>10</y>
+          <width>271</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="baseColor">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="bgColor">
+         <color>
+          <red>85</red>
+          <green>85</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="arcColor">
+         <color>
+          <red>85</red>
+          <green>170</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="borderColor">
+         <color>
+          <red>85</red>
+          <green>0</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="textColor">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="pressColor">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="iconText">
+         <string>67</string>
+        </property>
+        <property name="centerText">
+         <string>68</string>
+        </property>
+        <property name="cloudStyle">
+         <enum>OGaugeCloud::CloudStyle_Black</enum>
+        </property>
+       </widget>
+       <widget class="OShadowCalendar" name="oShadowCalendar">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>20</y>
+          <width>461</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <property name="bgColor">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="textColor">
+         <color>
+          <red>170</red>
+          <green>170</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="shadowColor">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="selectColor">
+         <color>
+          <red>85</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_8">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>0</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+       <widget class="OShadowClock" name="oShadowClock">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>320</y>
+          <width>221</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <property name="radiusWidth">
+         <number>2</number>
+        </property>
+        <property name="shadowWidth">
+         <number>4</number>
+        </property>
+       </widget>
+       <widget class="OGaugeEdit" name="oGaugeEdit">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>340</y>
+          <width>261</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="value">
+         <double>50.000000000000000</double>
+        </property>
+        <property name="startAngle">
+         <number>45</number>
+        </property>
+        <property name="endAngle">
+         <number>315</number>
+        </property>
+        <property name="innerCircleColor">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="centerCircleColor">
+         <color>
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>页</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="OCustomGraphics" name="oCustomGraphics"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>页</string>
+       </attribute>
+       <widget class="OGaugeCompass" name="oGaugeCompass">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>80</y>
+          <width>291</width>
+          <height>241</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QSlider" name="verticalSlider">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>19</width>
+          <height>271</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>360</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="ORulerTemp" name="oRulerTemp">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>30</y>
+          <width>111</width>
+          <height>511</height>
+         </rect>
+        </property>
+        <property name="minValue">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="maxValue">
+         <double>100.000000000000000</double>
+        </property>
+        <property name="value">
+         <double>37.000000000000000</double>
+        </property>
+        <property name="precision">
+         <number>0</number>
+        </property>
+        <property name="longStep">
+         <number>10</number>
+        </property>
+        <property name="shortStep">
+         <number>2</number>
+        </property>
+        <property name="space">
+         <number>10</number>
+        </property>
+        <property name="userValue">
+         <double>15.000000000000000</double>
+        </property>
+        <property name="barBgColor">
+         <color>
+          <red>255</red>
+          <green>85</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="barColor">
+         <color>
+          <red>0</red>
+          <green>170</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="barPosition">
+         <enum>ORulerTemp::BarPosition_Center</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>ORulerTemp::TickPosition_Both</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="verticalSlider_2">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>100</y>
+          <width>19</width>
+          <height>331</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="OGaugeSpeed" name="oGaugeSpeed">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>70</y>
+          <width>431</width>
+          <height>431</height>
+         </rect>
+        </property>
+        <property name="precision">
+         <number>2</number>
+        </property>
+        <property name="scaleMinor">
+         <number>4</number>
+        </property>
+        <property name="startAngle">
+         <number>60</number>
+        </property>
+        <property name="endAngle">
+         <number>300</number>
+        </property>
+        <property name="ringWidth">
+         <number>35</number>
+        </property>
+        <property name="ringMidPercent">
+         <number>40</number>
+        </property>
+        <property name="ringEndPercent">
+         <number>30</number>
+        </property>
+        <property name="ringColorEnd">
+         <color>
+          <red>255</red>
+          <green>170</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="textColor">
+         <color>
+          <red>255</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider_4">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>500</y>
+          <width>391</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>页</string>
+       </attribute>
+       <widget class="ORulerProgress" name="oRulerProgress">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>50</y>
+          <width>551</width>
+          <height>61</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider_5">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>140</y>
+          <width>531</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="OSwitchButton" name="oSwitchButton">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>200</y>
+          <width>241</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+        <property name="buttonStyle">
+         <enum>OSwitchButton::ButtonStyle_Rect</enum>
+        </property>
+        <property name="bgColorOff">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="bgColorOn">
+         <color>
+          <red>85</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="textOff">
+         <string>off</string>
+        </property>
+        <property name="textOn">
+         <string>on</string>
+        </property>
+        <property name="imageOff">
+         <string>:/image/yes.png</string>
+        </property>
+        <property name="imageOn">
+         <string>:/image/on.png</string>
+        </property>
+        <property name="rectRadius">
+         <number>15</number>
+        </property>
+       </widget>
+       <widget class="OAnimationButton" name="oAnimationButton">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>390</y>
+          <width>171</width>
+          <height>61</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="OGaugeCar" name="oGaugeCar">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>50</y>
+          <width>341</width>
+          <height>371</height>
+         </rect>
+        </property>
+        <property name="value">
+         <double>15.000000000000000</double>
+        </property>
+        <property name="innerCircleColor">
+         <color>
+          <red>170</red>
+          <green>85</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="pieColorMid">
+         <color>
+          <red>85</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="scaleColor">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="showOverlay">
+         <bool>true</bool>
+        </property>
+        <property name="pieStyle">
+         <enum>OGaugeCar::PieStyle_Three</enum>
+        </property>
+        <property name="pointerStyle">
+         <enum>OGaugeCar::PointerStyle_Indicator</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider_6">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>480</y>
+          <width>391</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_10">
+       <attribute name="title">
+        <string>页</string>
+       </attribute>
+       <widget class="OGaugePercent" name="oGaugePercent">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>321</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="value">
+         <double>15.000000000000000</double>
+        </property>
+        <property name="scaleMinor">
+         <number>4</number>
+        </property>
+        <property name="baseColor">
+         <color>
+          <red>170</red>
+          <green>85</green>
+          <blue>0</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="OProgressRing" name="oProgressRing">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>70</y>
+          <width>211</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="value">
+         <double>25.000000000000000</double>
+        </property>
+        <property name="ringPadding">
+         <number>5</number>
+        </property>
+        <property name="ringWidth">
+         <number>20</number>
+        </property>
+       </widget>
+       <widget class="OProgressRing" name="oProgressRing_2">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>70</y>
+          <width>211</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="value">
+         <double>25.000000000000000</double>
+        </property>
+        <property name="ringPadding">
+         <number>5</number>
+        </property>
+        <property name="ringWidth">
+         <number>5</number>
+        </property>
+       </widget>
+       <widget class="OProgressRing" name="oProgressRing_3">
+        <property name="geometry">
+         <rect>
+          <x>880</x>
+          <y>70</y>
+          <width>211</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="value">
+         <double>25.000000000000000</double>
+        </property>
+        <property name="ringPadding">
+         <number>5</number>
+        </property>
+        <property name="ringWidth">
+         <number>60</number>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider_7">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>260</y>
+          <width>551</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="OCustomPie" name="oCustomPie">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>300</y>
+          <width>281</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="textColor">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="borderColor">
+         <color>
+          <red>170</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_9">
+        <property name="geometry">
+         <rect>
+          <x>1050</x>
+          <y>520</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_11">
+       <attribute name="title">
+        <string>页</string>
+       </attribute>
+       <widget class="OAntLine" name="oAntLine">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>40</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="OAntLine" name="oAntLine_2">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>40</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="lineColor">
+         <color>
+          <red>255</red>
+          <green>170</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="lineStyle">
+         <enum>OAntLine::LineStyle_Rect</enum>
+        </property>
+       </widget>
+       <widget class="OAntLine" name="oAntLine_3">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>50</y>
+          <width>100</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="lineStyle">
+         <enum>OAntLine::LineStyle_Ellipse</enum>
+        </property>
+       </widget>
+       <widget class="OAdsWidget" name="oAdsWidget">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>250</y>
+          <width>431</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="showNumber">
+         <bool>true</bool>
+        </property>
+        <property name="navColor">
+         <color>
+          <red>255</red>
+          <green>85</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="textColor">
+         <color>
+          <red>170</red>
+          <green>0</green>
+          <blue>255</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="OTiledBg" name="oTiledBg">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>60</y>
+          <width>401</width>
+          <height>421</height>
+         </rect>
+        </property>
+        <property name="color1">
+         <color>
+          <red>170</red>
+          <green>170</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="color2">
+         <color>
+          <red>85</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_12">
+       <attribute name="title">
+        <string>页</string>
+       </attribute>
+       <widget class="OColorButton" name="oColorButton">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>40</y>
+          <width>141</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="borderRadius">
+         <number>5</number>
+        </property>
+       </widget>
+       <widget class="OColorButton" name="oColorButton_2">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>40</y>
+          <width>141</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="borderRadius">
+         <number>5</number>
+        </property>
+        <property name="borderWidth">
+         <number>3</number>
+        </property>
+       </widget>
+       <widget class="OColorButton" name="oColorButton_3">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>40</y>
+          <width>141</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="borderRadius">
+         <number>5</number>
+        </property>
+        <property name="borderWidth">
+         <number>3</number>
+        </property>
+        <property name="borderColor">
+         <color>
+          <red>170</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="OColorButton" name="oColorButton_4">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>40</y>
+          <width>141</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="borderRadius">
+         <number>5</number>
+        </property>
+        <property name="borderWidth">
+         <number>3</number>
+        </property>
+        <property name="borderColor">
+         <color>
+          <red>170</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="showSuperText">
+         <bool>true</bool>
+        </property>
+        <property name="superText">
+         <string>123</string>
+        </property>
+       </widget>
+       <widget class="OColorButton" name="oColorButton_5">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>40</y>
+          <width>141</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="borderRadius">
+         <number>5</number>
+        </property>
+        <property name="borderWidth">
+         <number>3</number>
+        </property>
+        <property name="borderColor">
+         <color>
+          <red>170</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="showSuperText">
+         <bool>true</bool>
+        </property>
+        <property name="superText">
+         <string>123</string>
+        </property>
+        <property name="superTextFont">
+         <font>
+          <family>Algerian</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+       </widget>
+       <widget class="OColorButton" name="oColorButton_6">
+        <property name="geometry">
+         <rect>
+          <x>920</x>
+          <y>40</y>
+          <width>141</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="borderRadius">
+         <number>5</number>
+        </property>
+        <property name="borderWidth">
+         <number>3</number>
+        </property>
+        <property name="borderColor">
+         <color>
+          <red>170</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="showSuperText">
+         <bool>true</bool>
+        </property>
+        <property name="superText">
+         <string>123</string>
+        </property>
+        <property name="superTextFont">
+         <font>
+          <family>Algerian</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="superTextAlign">
+         <enum>OColorButton::TextAlign_Center_Center</enum>
+        </property>
+       </widget>
+       <widget class="OColorButton" name="oColorButton_7">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>140</y>
+          <width>141</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="borderRadius">
+         <number>5</number>
+        </property>
+        <property name="borderWidth">
+         <number>3</number>
+        </property>
+        <property name="borderColor">
+         <color>
+          <red>170</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="showSuperText">
+         <bool>true</bool>
+        </property>
+        <property name="superText">
+         <string>123</string>
+        </property>
+        <property name="superTextFont">
+         <font>
+          <family>Algerian</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="superTextAlign">
+         <enum>OColorButton::TextAlign_Center_Center</enum>
+        </property>
+        <property name="normalColor">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="OColorButton" name="oColorButton_8">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>140</y>
+          <width>141</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="borderRadius">
+         <number>5</number>
+        </property>
+        <property name="borderWidth">
+         <number>3</number>
+        </property>
+        <property name="borderColor">
+         <color>
+          <red>170</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="showSuperText">
+         <bool>true</bool>
+        </property>
+        <property name="superText">
+         <string>123</string>
+        </property>
+        <property name="superTextFont">
+         <font>
+          <family>Algerian</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="superTextAlign">
+         <enum>OColorButton::TextAlign_Center_Center</enum>
+        </property>
+        <property name="normalColor">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="colorMode">
+         <enum>OColorButton::ColorMode_Shade</enum>
+        </property>
+       </widget>
+       <widget class="OColorButton" name="oColorButton_9">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>140</y>
+          <width>141</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="borderRadius">
+         <number>5</number>
+        </property>
+        <property name="borderWidth">
+         <number>3</number>
+        </property>
+        <property name="borderColor">
+         <color>
+          <red>170</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="showSuperText">
+         <bool>true</bool>
+        </property>
+        <property name="superText">
+         <string>123</string>
+        </property>
+        <property name="superTextFont">
+         <font>
+          <family>Algerian</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="superTextAlign">
+         <enum>OColorButton::TextAlign_Center_Center</enum>
+        </property>
+        <property name="normalColor">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="bgImage">
+         <pixmap resource="res.qrc">:/image/0.jpg</pixmap>
+        </property>
+        <property name="colorMode">
+         <enum>OColorButton::ColorMode_Shade</enum>
+        </property>
+       </widget>
+       <widget class="OGaugePanel" name="oGaugePanel">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>240</y>
+          <width>371</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <property name="precision">
+         <number>1</number>
+        </property>
+        <property name="scalePrecision">
+         <number>1</number>
+        </property>
+        <property name="ringWidth">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="OImageAnimation" name="oImageAnimation">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>240</y>
+          <width>401</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="pixmap1">
+         <pixmap resource="res.qrc">:/image/0.jpg</pixmap>
+        </property>
+        <property name="pixmap2">
+         <pixmap resource="res.qrc">:/image/1.png</pixmap>
+        </property>
+        <property name="animationType">
+         <enum>OImageAnimation::BlindsEffect</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_10">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>540</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_13">
+       <attribute name="title">
+        <string>页</string>
+       </attribute>
+       <widget class="OLightPoint" name="oLightPoint">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>60</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="OLightPoint" name="oLightPoint_2">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>60</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="bgColor">
+         <color alpha="0">
+          <red>0</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="OLightPoint" name="oLightPoint_3">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>200</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="bgColor">
+         <color alpha="0">
+          <red>0</red>
+          <green>0</green>
+          <blue>255</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="OLightPoint" name="oLightPoint_4">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>200</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="bgColor">
+         <color alpha="0">
+          <red>170</red>
+          <green>170</green>
+          <blue>0</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="OLightButton" name="oLightButton">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>330</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="OLightButton" name="oLightButton_2">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>330</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="OLightButton" name="oLightButton_3">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>460</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>123</string>
+        </property>
+        <property name="textColor">
+         <color>
+          <red>255</red>
+          <green>170</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="showRect">
+         <bool>false</bool>
+        </property>
+        <property name="showOverlay">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="OLightButton" name="oLightButton_4">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>460</y>
+          <width>100</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>123</string>
+        </property>
+        <property name="showOverlay">
+         <bool>true</bool>
+        </property>
+        <property name="overlayColor">
+         <color alpha="30">
+          <red>255</red>
+          <green>85</green>
+          <blue>0</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_11">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>550</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+       <widget class="ONavLabel" name="oNavLabel">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>50</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="background">
+         <color>
+          <red>0</red>
+          <green>170</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="showTriangle">
+         <bool>false</bool>
+        </property>
+        <property name="triangleLen">
+         <number>15</number>
+        </property>
+        <property name="buddy">
+         <cstring>234</cstring>
+        </property>
+       </widget>
+       <widget class="ONavLabel" name="oNavLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>900</x>
+          <y>50</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="arrowSize">
+         <number>15</number>
+        </property>
+        <property name="showTriangle">
+         <bool>false</bool>
+        </property>
+        <property name="triangleLen">
+         <number>15</number>
+        </property>
+        <property name="buddy">
+         <cstring>234</cstring>
+        </property>
+       </widget>
+       <widget class="ONavLabel" name="oNavLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>50</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="borderRadius">
+         <number>8</number>
+        </property>
+        <property name="showTriangle">
+         <bool>false</bool>
+        </property>
+        <property name="triangleLen">
+         <number>15</number>
+        </property>
+        <property name="buddy">
+         <cstring>234</cstring>
+        </property>
+       </widget>
+       <widget class="ONavLabel" name="oNavLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>130</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="arrowPosition">
+         <enum>ONavLabel::ArrowPosition_Right</enum>
+        </property>
+        <property name="showTriangle">
+         <bool>false</bool>
+        </property>
+        <property name="triangleLen">
+         <number>15</number>
+        </property>
+        <property name="buddy">
+         <cstring>234</cstring>
+        </property>
+       </widget>
+       <widget class="ONavLabel" name="oNavLabel_5">
+        <property name="geometry">
+         <rect>
+          <x>900</x>
+          <y>140</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="showTriangle">
+         <bool>true</bool>
+        </property>
+        <property name="triangleLen">
+         <number>4</number>
+        </property>
+        <property name="trianglePosition">
+         <enum>ONavLabel::TrianglePosition_Right</enum>
+        </property>
+        <property name="buddy">
+         <cstring>234</cstring>
+        </property>
+       </widget>
+       <widget class="ONavLabel" name="oNavLabel_6">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>130</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="arrowPosition">
+         <enum>ONavLabel::ArrowPosition_Top</enum>
+        </property>
+        <property name="showTriangle">
+         <bool>false</bool>
+        </property>
+        <property name="triangleLen">
+         <number>15</number>
+        </property>
+        <property name="buddy">
+         <cstring>234</cstring>
+        </property>
+       </widget>
+       <widget class="ONavLabel" name="oNavLabel_7">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>210</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="arrowSize">
+         <number>10</number>
+        </property>
+        <property name="showTriangle">
+         <bool>true</bool>
+        </property>
+        <property name="triangleLen">
+         <number>10</number>
+        </property>
+        <property name="trianglePosition">
+         <enum>ONavLabel::TrianglePosition_Right</enum>
+        </property>
+        <property name="triangleColor">
+         <color>
+          <red>85</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="buddy">
+         <cstring>234</cstring>
+        </property>
+       </widget>
+       <widget class="ONavLabel" name="oNavLabel_8">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>210</y>
+          <width>51</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="arrowPosition">
+         <enum>ONavLabel::ArrowPosition_Top</enum>
+        </property>
+        <property name="showTriangle">
+         <bool>false</bool>
+        </property>
+        <property name="triangleLen">
+         <number>15</number>
+        </property>
+        <property name="buddy">
+         <cstring>234</cstring>
+        </property>
+       </widget>
+       <widget class="OBattery" name="oBattery">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>390</y>
+          <width>261</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="borderRadius">
+         <number>5</number>
+        </property>
+        <property name="headRadius">
+         <number>5</number>
+        </property>
+        <property name="borderColorStart">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="borderColorEnd">
+         <color>
+          <red>170</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="alarmColorEnd">
+         <color>
+          <red>255</red>
+          <green>85</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="normalColorEnd">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>127</blue>
+         </color>
+        </property>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider_8">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>530</y>
+          <width>341</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1176</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>OAdsWidget</class>
+   <extends>QWidget</extends>
+   <header>oadswidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OAnimationButton</class>
+   <extends>QWidget</extends>
+   <header>oanimationbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OAntLine</class>
+   <extends>QWidget</extends>
+   <header>oantline.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OAudioWaveWidget</class>
+   <extends>QWidget</extends>
+   <header>oaudiowavewidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OBattery</class>
+   <extends>QWidget</extends>
+   <header>obattery.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OColorButton</class>
+   <extends>QWidget</extends>
+   <header>ocolorbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OCombobox</class>
+   <extends>QComboBox</extends>
+   <header>ocombobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OCustomGraphics</class>
+   <extends>QWidget</extends>
+   <header>ocustomgraphics.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OCustomPie</class>
+   <extends>QWidget</extends>
+   <header>ocustompie.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OGaugeCar</class>
+   <extends>QWidget</extends>
+   <header>ogaugecar.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OGaugeClock</class>
+   <extends>QWidget</extends>
+   <header>ogaugeclock.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OGaugeCloud</class>
+   <extends>QWidget</extends>
+   <header>ogaugecloud.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OGaugeCompass</class>
+   <extends>QWidget</extends>
+   <header>ogaugecompass.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OGaugeEdit</class>
+   <extends>QWidget</extends>
+   <header>ogaugeedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OGaugePanel</class>
+   <extends>QWidget</extends>
+   <header>ogaugepanel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OGaugePercent</class>
+   <extends>QWidget</extends>
+   <header>ogaugepercent.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OGaugeSpeed</class>
+   <extends>QWidget</extends>
+   <header>ogaugespeed.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OImageAnimation</class>
+   <extends>QWidget</extends>
+   <header>oimageanimation.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OLightButton</class>
+   <extends>QWidget</extends>
+   <header>olightbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OLightPoint</class>
+   <extends>QWidget</extends>
+   <header>olightpoint.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OMoveWidget</class>
+   <extends>QPushButton</extends>
+   <header>omovewidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ONavLabel</class>
+   <extends>QLabel</extends>
+   <header>onavlabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OProgressRing</class>
+   <extends>QWidget</extends>
+   <header>oprogressring.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ORulerProgress</class>
+   <extends>QWidget</extends>
+   <header>orulerprogress.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ORulerTemp</class>
+   <extends>QWidget</extends>
+   <header>orulertemp.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OScanTanTan</class>
+   <extends>QWidget</extends>
+   <header>oscantantan.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OShadowCalendar</class>
+   <extends>QWidget</extends>
+   <header>oshadowcalendar.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OShadowClock</class>
+   <extends>QWidget</extends>
+   <header>oshadowclock.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OSwitchButton</class>
+   <extends>QWidget</extends>
+   <header>oswitchbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OTiledBg</class>
+   <extends>QWidget</extends>
+   <header>otiledbg.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OTimeAxisWidget</class>
+   <extends>QScrollArea</extends>
+   <header>otimeaxiswidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OWaveBar</class>
+   <extends>QWidget</extends>
+   <header>owavebar.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OWaveDouble</class>
+   <extends>QWidget</extends>
+   <header>owavedouble.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OWaveLine</class>
+   <extends>QWidget</extends>
+   <header>owaveline.h</header>
+  </customwidget>
+  <customwidget>
+   <class>OWavePlot</class>
+   <extends>QWidget</extends>
+   <header>owaveplot.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
